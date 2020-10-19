@@ -1,0 +1,4 @@
+[1019/233053.896:ERROR:crash_report_database_win.cc(609)] CreateDirectory C:\Users\vitovt\AppData\Local\Temp\karma-43303407\Crashpad: The system cannot find the path specified. (0x3)
+[1019/233053.985:ERROR:exit_code_watcher_win.cc(87)] Failed to wait for process exit or stop event
+[1019/233054.078:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1019/233054.078:ERROR:crash_report_database_win.cc(609)] CreateDirectory C:\Users\vitovt\AppData\Local\Temp\karma-43303407\Crashpad: The system cannot find the path specified. (0x3)
