@@ -35,6 +35,10 @@ jobs:
           command: tar zcf dist.tar.gz dist/weather-learning
       - store_artifacts:
           path: dist.tar.gz
+
+orbs:
+  browser-tools: circleci/browser-tools@1.1.0
+
 workflows:
   version: 2
   build-and-test:
