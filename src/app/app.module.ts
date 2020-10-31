@@ -14,7 +14,6 @@ import { MaterialModule } from './material.module'
     BrowserModule,
     HttpClientModule,
     MaterialModule,
-    MaterialModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
   ],
