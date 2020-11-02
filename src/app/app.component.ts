@@ -5,7 +5,11 @@ import { Component } from '@angular/core'
   template: `
     <div>
       <mat-toolbar color="primary">LocalCast Weather</mat-toolbar>
-      <div>Your city, your forecast, right now!</div>
+      <div fxLayoutAlign="center ">
+        <div class="mat-caption vertical-margin">
+          Your city, your forecast, right now!
+        </div>
+      </div>
       <div fxLayout="row">
         <div fxFlex></div>
 
