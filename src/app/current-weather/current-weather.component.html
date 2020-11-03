@@ -10,7 +10,8 @@
       {{current.date | date: 'MMM d'}}{{getOrdinal(current.date)}}</div>
   </div>
   <div fxLayout="row" fxLayoutAlign="center center">
-    <div fxFlex="66%"><img style="zoom: 175%" [src]="current.image"></div>
+    <div fxFlex="66%"><img style="zoom: 175%" [src]="current.image"
+        [alt]="current.description"></div>
     <div fxFlex class='right no-margin'>
       <p class='mat-display-3'>
 
