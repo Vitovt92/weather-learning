@@ -23,7 +23,7 @@ import { Component } from '@angular/core'
             </mat-card-title>
           </mat-card-header>
           <mat-card-content>
-            <app-current-weather [current]="currentWeather"></app-current-weather>
+            <app-current-weather></app-current-weather>
           </mat-card-content>
         </mat-card>
 
