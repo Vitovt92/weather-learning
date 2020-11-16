@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 import { FormControl, Validators } from '@angular/forms'
 import { debounceTime } from 'rxjs/operators'
 
@@ -10,7 +10,6 @@ import { WeatherService } from '../weather/weather.service'
   styleUrls: ['./city-search.component.css'],
 })
 export class CitySearchComponent implements OnInit {
-  @Output() searchEvent = new EventEmitter<string>()
   search = new FormControl('', [Validators.minLength(2)])
 
   constructor(private weatherService: WeatherService) {}
@@ -19,8 +18,6 @@ export class CitySearchComponent implements OnInit {
     this.search.valueChanges.pipe(debounceTime(1000)).subscribe((searchValue: string) => {
       if (!this.search.invalid) {
         const userInput = searchValue.split(',').map((s) => s.trim())
-
-        this.searchEvent.emit(searchValue)
 
         this.weatherService
           .getCurrentWeather(
