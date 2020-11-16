@@ -26,7 +26,7 @@ import { WeatherService } from './weather/weather.service'
             </mat-card-title>
           </mat-card-header>
           <mat-card-content>
-            <app-current-weather></app-current-weather>
+            <app-current-weather [current]="currentWeather"></app-current-weather>
           </mat-card-content>
         </mat-card>
 

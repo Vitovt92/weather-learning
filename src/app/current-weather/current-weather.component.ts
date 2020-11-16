@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, Input, OnInit } from '@angular/core'
 
 import { ICurrentWeather } from '../interfaces'
 import { WeatherService } from '../weather/weather.service'
@@ -9,9 +9,9 @@ import { WeatherService } from '../weather/weather.service'
   styleUrls: ['./current-weather.component.css'],
 })
 export class CurrentWeatherComponent implements OnInit {
-  current: ICurrentWeather
-
   constructor(private weatherService: WeatherService) {}
+
+  @Input() current: ICurrentWeather
 
   getOrdinal(date: number) {
     const n = new Date(date).getDate()
@@ -20,9 +20,5 @@ export class CurrentWeatherComponent implements OnInit {
       : ''
   }
 
-  ngOnInit() {
-    this.weatherService
-      .getCurrentWeather('Kyiv', 'UA')
-      .subscribe((data) => (this.current = data))
-  }
+  ngOnInit() {}
 }
