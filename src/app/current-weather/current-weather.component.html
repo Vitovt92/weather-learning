@@ -7,7 +7,8 @@
     </div>
     <div fxFlex class='right mat-h3 no-margin'>
       {{current.date | date: 'EEEE'}} <br>
-      {{current.date | date: 'MMM d'}}{{getOrdinal(current.date)}}</div>
+      {{current.date | date: 'MMM d'}}{{getOrdinal(current.date)}}
+    </div>
   </div>
   <div fxLayout="row" fxLayoutAlign="center center">
     <div fxFlex="66%"><img style="zoom: 175%" [src]="current.image"
